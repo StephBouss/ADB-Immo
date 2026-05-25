@@ -13,12 +13,11 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
-        <div className={`container ${styles.heroContainer}`}>
-          <div className={styles.heroContent}>
-            <p className={styles.heroSubtitle}>NOTRE HISTOIRE</p>
-            <h1 className={styles.heroTitle}>L’Immobilier Repensé, pour Vous.</h1>
-            <p className={styles.heroText}>Découvrez l'équipe et la philosophie qui se cachent derrière l'agence immobilière de référence à Libreville.</p>
-          </div>
+        <div className={styles.heroContent}>
+          <span className={styles.heroTag}>Notre Histoire</span>
+          <h1 className={styles.heroTitle}>L’Immobilier Repensé, pour Vous</h1>
+          <div className={styles.heroGoldLine}><span className={styles.heroGoldDot}></span></div>
+          <p className={styles.heroText}>Découvrez l’équipe et la philosophie qui se cachent derrière l’agence immobilière de référence à Libreville.</p>
         </div>
       </section>
 

@@ -111,8 +111,10 @@ export default async function PropertiesPage(props) {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
+          <span className={styles.heroTag}>Catalogue Immobilier — Gabon</span>
           <h1 className={styles.heroTitle}>Biens Immobiliers</h1>
-          <p className={styles.heroSubtitle}>Trouvez le bien qui vous correspond parmi notre sélection.</p>
+          <div className={styles.heroGoldLine}><span className={styles.heroGoldDot}></span></div>
+          <p className={styles.heroSubtitle}>Trouvez le bien qui vous correspond parmi notre sélection de propriétés à Libreville.</p>
         </div>
       </section>
 
