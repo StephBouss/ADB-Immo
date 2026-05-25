@@ -1,0 +1,337 @@
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.heroSubtitle {
+  color: var(--premium-gold);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.historySection {
+  padding: 120px 0;
+  background: white;
+}
+
+.historyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.historyImgWrapper {
+  position: relative;
+}
+
+.historyImgWrapper::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--premium-gold);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.historyImg {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.visionSection {
+  padding: 100px 0;
+  background: var(--off-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.quoteMark {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-size: 20rem;
+  color: rgba(10, 67, 198, 0.03);
+  font-family: var(--font-heading);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.visionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.visionCard {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.visionCard h3 {
+  font-size: 2rem;
+  color: var(--royal-blue);
+  margin-bottom: 20px;
+}
+
+.valuesSection {
+  padding: 120px 0;
+  background: white;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.valueCard {
+  padding: 40px 30px;
+  background: var(--off-white);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.valueCard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to top, var(--royal-blue), #1155e8);
+  transition: height 0.4s ease;
+  z-index: -1;
+}
+
+.valueCard:hover {
+  transform: translateY(-10px);
+}
+
+.valueCard:hover::before {
+  height: 100%;
+}
+
+.valueIcon {
+  color: var(--premium-gold);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.valueCard:hover .valueIcon,
+.valueCard:hover h4,
+.valueCard:hover p {
+  color: white;
+}
+
+.valueCard h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--royal-blue);
+  transition: color 0.4s ease;
+}
+
+.valueCard p {
+  color: #666;
+  transition: color 0.4s ease;
+}
+
+.approachSection {
+  padding: 120px 0;
+  background: var(--royal-blue);
+  color: white;
+  text-align: center;
+}
+
+.approachContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.approachTitle {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: var(--premium-gold);
+}
+
+.approachText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.teamSection {
+  padding: 120px 0;
+  background: white;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.teamMember {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.teamImg {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  filter: grayscale(100%);
+}
+
+.teamMember:hover .teamImg {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.teamOverlay {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: white;
+  transition: bottom 0.4s ease;
+}
+
+.teamMember:hover .teamOverlay {
+  bottom: 0;
+}
+
+.teamName {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.teamRole {
+  color: var(--premium-gold);
+  font-weight: 500;
+}
+
+.trustSection {
+  padding: 100px 0;
+  background: var(--off-white);
+  text-align: center;
+}
+
+.testimonialSlider {
+  max-width: 800px;
+  margin: 40px auto 0;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stars {
+  color: var(--premium-gold);
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.clientName {
+  font-weight: 600;
+  color: var(--royal-blue);
+}
+
+.clientTitle {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.ctaFinal {
+  padding: 120px 0;
+  background: url('/images/villa1.png') center/cover fixed;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .historyGrid, .visionGrid {
+    grid-template-columns: 1fr;
+  }
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}

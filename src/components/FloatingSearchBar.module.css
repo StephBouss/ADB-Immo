@@ -1,0 +1,126 @@
+.searchContainer {
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  background: white !important;
+  border: 1px solid rgba(10, 67, 198, 0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12), 0 2px 10px rgba(0, 0, 0, 0.06);
+  animation: floatUp 1s ease-out;
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: var(--royal-blue);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--premium-gold);
+  transition: var(--transition);
+}
+
+.tab.active::after {
+  width: 100%;
+}
+
+.darkTheme {
+  background: white !important;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+.darkTheme .tab {
+  color: var(--royal-blue);
+  font-weight: 600;
+}
+
+.searchForm {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  align-items: center;
+}
+
+.inputGroup {
+  flex: 1;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.inputGroup select {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--dark-text);
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--light-gray);
+}
+
+.searchBtn {
+  padding: 18px 30px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .searchForm {
+    flex-direction: column;
+    align-items: stretch;
+    background: transparent;
+    padding: 0;
+  }
+  
+  .inputGroup {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    display: none;
+  }
+}
