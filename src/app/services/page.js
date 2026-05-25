@@ -84,9 +84,9 @@ export default function ServicesPage() {
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <span className={styles.heroTag}>Nos Expertises</span>
-          <h1 className={styles.heroTitle}>L’Art de Valoriser Votre Patrimoine Immobilier</h1>
+          <h1 className={styles.heroTitle}>L’Art de Valoriser Votre Patrimoine</h1>
           <div className={styles.heroGoldLine}><span className={styles.heroGoldDot}></span></div>
-          <p className={styles.heroText}>De la recherche de votre résidence idéale à la gestion complète de vos investissements, ADB Immo déploie une gamme de services sur-mesure pour concrétiser vos ambitions immobilières au Gabon.</p>
+          <p className={styles.heroText}>Des services immobiliers sur-mesure pour concrétiser vos ambitions au Gabon.</p>
           <Link href="/contact" className="btn btn-gold">Confiez-nous votre projet</Link>
         </div>
       </section>
