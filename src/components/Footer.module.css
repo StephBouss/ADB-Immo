@@ -1,119 +1,186 @@
 .footer {
-  background-color: var(--royal-blue);
+  background-color: var(--navy-deep);
   color: white;
-  padding: 80px 0 20px;
-  margin-top: auto;
+  padding: 70px 0 0;
+  position: relative;
+}
+
+.goldBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy-deep), var(--premium-gold) 50%, var(--navy-deep));
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-bottom: 60px;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
 }
 
-.logo {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+.col {
+  display: flex;
+  flex-direction: column;
 }
 
-.logoAccent {
-  color: var(--premium-gold);
+/* Logo */
+.logoLink {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.logoImg {
+  height: 65px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
 }
 
 .tagline {
-  color: var(--light-gray);
-  margin-bottom: 25px;
-  font-size: 0.95rem;
-  opacity: 0.9;
+  color: var(--premium-gold);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 28px;
 }
 
+/* Socials */
 .socials {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
 .socialIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(244, 180, 0, 0.5);
   border-radius: 50%;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   transition: var(--transition);
 }
 
 .socialIcon:hover {
   background-color: var(--premium-gold);
+  border-color: var(--premium-gold);
+  color: white;
   transform: translateY(-3px);
 }
 
-.title {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 10px;
+/* Column titles */
+.colTitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--premium-gold);
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(244, 180, 0, 0.25);
 }
 
-.title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 2px;
-  background-color: var(--premium-gold);
-}
-
+/* Links */
 .links {
   list-style: none;
-}
-
-.links li {
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .links a {
-  color: var(--light-gray);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
   transition: var(--transition);
-  display: inline-block;
-  opacity: 0.8;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.links a::before {
+  content: '›';
+  color: var(--premium-gold);
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .links a:hover {
-  color: var(--premium-gold);
-  opacity: 1;
-  transform: translateX(5px);
+  color: white;
+  padding-left: 4px;
 }
 
+/* Contact list */
 .contactList {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .contactList li {
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  color: var(--light-gray);
-  opacity: 0.9;
-  line-height: 1.5;
+  align-items: flex-start;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
-.icon {
-  color: var(--premium-gold);
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-  margin-top: 3px;
+  border: 1.5px solid rgba(244, 180, 0, 0.5);
+  border-radius: 50%;
+  color: var(--premium-gold);
+  margin-top: 2px;
 }
 
+/* Bottom bar */
 .bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
-  text-align: center;
-  color: var(--light-gray);
-  font-size: 0.9rem;
-  opacity: 0.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.82rem;
+  font-family: var(--font-body);
+}
+
+.bottomRight {
+  color: rgba(244, 180, 0, 0.6);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .col:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 580px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
 }

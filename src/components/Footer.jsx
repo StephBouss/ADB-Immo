@@ -5,41 +5,57 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.goldBar}></div>
+
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.col}>
-            <div className={styles.logo}>ADB <span className={styles.logoAccent}>Immo</span></div>
+            <Link href="/" className={styles.logoLink}>
+              <img src="/logo.png" alt="ADB Immo" className={styles.logoImg} />
+            </Link>
             <p className={styles.tagline}>L'EXCELLENCE IMMOBILIÈRE À VOTRE PORTÉE</p>
             <div className={styles.socials}>
-              <a href="#" className={styles.socialIcon}><Globe size={20} /></a>
-              <a href="#" className={styles.socialIcon}><Camera size={20} /></a>
-              <a href="#" className={styles.socialIcon}><MessageCircle size={20} /></a>
+              <a href="#" className={styles.socialIcon} aria-label="Site web"><Globe size={18} /></a>
+              <a href="#" className={styles.socialIcon} aria-label="Instagram"><Camera size={18} /></a>
+              <a href="https://wa.me/24177353433" className={styles.socialIcon} aria-label="WhatsApp"><MessageCircle size={18} /></a>
             </div>
           </div>
-          
+
           <div className={styles.col}>
-            <h4 className={styles.title}>Liens Rapides</h4>
+            <h4 className={styles.colTitle}>Liens Rapides</h4>
             <ul className={styles.links}>
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/properties">Biens immobiliers</Link></li>
+              <li><Link href="/buy">Acheter</Link></li>
+              <li><Link href="/rent">Louer</Link></li>
               <li><Link href="/services">Nos Services</Link></li>
-              <li><Link href="/about">À propos de nous</Link></li>
+              <li><Link href="/about">À propos</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
-          
+
           <div className={styles.col}>
-            <h4 className={styles.title}>Contact</h4>
+            <h4 className={styles.colTitle}>Contact</h4>
             <ul className={styles.contactList}>
-              <li><MapPin size={18} className={styles.icon} /> Résidence Équateur, Villa 3<br/>Libreville – Gabon</li>
-              <li><Phone size={18} className={styles.icon} /> +(241) 77 353 433<br/>+(241) 66 257 839</li>
-              <li><Mail size={18} className={styles.icon} /> adbimmo01@gmail.com</li>
+              <li>
+                <span className={styles.iconCircle}><MapPin size={16} /></span>
+                <span>Résidence Équateur, Villa 3<br />Libreville – Gabon</span>
+              </li>
+              <li>
+                <span className={styles.iconCircle}><Phone size={16} /></span>
+                <span>+(241) 77 353 433<br />+(241) 66 257 839</span>
+              </li>
+              <li>
+                <span className={styles.iconCircle}><Mail size={16} /></span>
+                <span>adbimmo01@gmail.com</span>
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} elyon crea. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} ADB Immo — Tous droits réservés.</p>
+          <p className={styles.bottomRight}>www.adbimmo.com</p>
         </div>
       </div>
     </footer>

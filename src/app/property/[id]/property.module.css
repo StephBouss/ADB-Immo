@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.58);
+  background: linear-gradient(to bottom, rgba(10, 25, 84, 0.55), rgba(10, 25, 84, 0.78));
 }
 
 .heroContent {
@@ -59,12 +59,12 @@
 
 .infoBar {
   background: white;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 2px solid var(--premium-gold);
   padding: 14px 0;
   position: sticky;
   top: 80px;
   z-index: 100;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(10, 25, 84, 0.08);
 }
 
 .infoBarInner {
@@ -94,10 +94,13 @@
   color: white;
   padding: 5px 14px;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   display: inline-block;
+  box-shadow: 0 2px 8px rgba(244, 180, 0, 0.35);
 }
 
 .title {

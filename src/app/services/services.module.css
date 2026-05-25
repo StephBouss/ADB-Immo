@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(10, 25, 84, 0.6), rgba(10, 25, 84, 0.78));
   z-index: 1;
 }
 
@@ -188,7 +188,7 @@
 
 .whyUs {
   padding: 100px 0;
-  background: var(--royal-blue);
+  background: var(--navy-deep);
   color: white;
 }
 

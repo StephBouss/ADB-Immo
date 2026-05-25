@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Shield, Home, Key, MapPin, Search, Star, MessageCircle, ArrowRight } from 'lucide-react';
+import { Shield, Home, Key, Search, ArrowRight } from 'lucide-react';
 import HeroSlider from '@/components/HeroSlider';
 import PropertyCard from '@/components/PropertyCard';
 import FloatingSearchBar from '@/components/FloatingSearchBar';
@@ -10,8 +10,8 @@ export default function HomePage() {
     {
       id: 1,
       title: "Villa Moderne avec Piscine",
-      price: "150 000 000",
-      location: "Sablière",
+      price: "150 000 000 FCFA",
+      location: "Sablière, Libreville",
       beds: 5,
       baths: 4,
       surface: 350,
@@ -21,8 +21,8 @@ export default function HomePage() {
     {
       id: 2,
       title: "Appartement de Luxe Vue Mer",
-      price: "85 000 000",
-      location: "Batterie IV",
+      price: "85 000 000 FCFA",
+      location: "Batterie IV, Libreville",
       beds: 3,
       baths: 2,
       surface: 180,
@@ -32,8 +32,8 @@ export default function HomePage() {
     {
       id: 3,
       title: "Résidence Contemporaine",
-      price: "220 000 000",
-      location: "Akanda",
+      price: "220 000 000 FCFA",
+      location: "Akanda, Libreville",
       beds: 6,
       baths: 5,
       surface: 420,
@@ -44,6 +44,7 @@ export default function HomePage() {
 
   const areas = ['Sablière', 'Akanda', 'Batterie IV', 'Charbonnages', 'Angondjé', 'Louis'];
   const areaImages = ['/images/villa1.png', '/images/hero.png', '/images/apartment1.png'];
+  const areaCounts = [18, 12, 15, 9, 11, 7];
 
   return (
     <>
@@ -53,50 +54,58 @@ export default function HomePage() {
         <FloatingSearchBar />
       </div>
 
+      {/* ─── Propriétés en vedette ─── */}
       <section className="py-5">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-title">Propriétés en Vedette</h2>
+            <div className="section-tag">Sélection Exclusive</div>
+            <h2 className="section-title">Propriétés en <span>Vedette</span></h2>
+            <div className="gold-line"><span className="gold-line-dot"></span></div>
             <p className="section-subtitle">Découvrez notre sélection exclusive de biens immobiliers de prestige à travers le Gabon.</p>
           </div>
-          
+
           <div className={styles.propertyGrid}>
             {featuredProperties.map(prop => (
               <PropertyCard key={prop.id} {...prop} />
             ))}
           </div>
-          
+
           <div className="text-center mt-3">
-            <Link href="/properties" className="btn btn-secondary">Voir toutes les propriétés <ArrowRight size={18} style={{marginLeft: '8px', verticalAlign: 'middle'}} /></Link>
+            <Link href="/properties" className="btn btn-secondary">
+              Voir toutes les propriétés <ArrowRight size={18} style={{ marginLeft: '8px', verticalAlign: 'middle' }} />
+            </Link>
           </div>
         </div>
       </section>
 
+      {/* ─── Nos services ─── */}
       <section className={`py-5 ${styles.servicesSection}`}>
         <div className="container">
           <div className="text-center">
-            <h2 className="section-title">Nos Services</h2>
-            <p className="section-subtitle">Une expertise complète pour tous vos projets immobiliers.</p>
+            <div className="section-tag">Ce que nous faisons</div>
+            <h2 className="section-title">Nos <span>Services</span></h2>
+            <div className="gold-line"><span className="gold-line-dot"></span></div>
+            <p className="section-subtitle">Une expertise complète pour tous vos projets immobiliers, de l'achat à la gestion locative.</p>
           </div>
-          
+
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}><Key size={32} /></div>
+              <div className={styles.serviceIcon}><Key size={30} /></div>
               <h3>Achat Immobilier</h3>
               <p>Accompagnement personnalisé pour trouver le bien qui correspond parfaitement à vos attentes et à votre budget.</p>
             </div>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}><Home size={32} /></div>
+              <div className={styles.serviceIcon}><Home size={30} /></div>
               <h3>Vente Immobilière</h3>
               <p>Mise en valeur de votre propriété et réseau d'acheteurs qualifiés pour une vente rapide et au meilleur prix.</p>
             </div>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}><Search size={32} /></div>
+              <div className={styles.serviceIcon}><Search size={30} /></div>
               <h3>Location</h3>
               <p>Vaste choix d'appartements et de villas à louer dans les meilleurs quartiers de Libreville.</p>
             </div>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}><Shield size={32} /></div>
+              <div className={styles.serviceIcon}><Shield size={30} /></div>
               <h3>Gestion Locative</h3>
               <p>Sérénité totale avec notre service de gestion complète : encaissement, entretien, et relation locataire.</p>
             </div>
@@ -104,6 +113,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Stats ─── */}
       <section className={styles.statsSection}>
         <div className="container">
           <div className={styles.statsGrid}>
@@ -127,36 +137,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Quartiers ─── */}
       <section className="py-5">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-title">Quartiers Prisés</h2>
+            <div className="section-tag">Où investir</div>
+            <h2 className="section-title">Quartiers <span>Prisés</span></h2>
+            <div className="gold-line"><span className="gold-line-dot"></span></div>
             <p className="section-subtitle">Explorez les zones les plus recherchées de Libreville.</p>
           </div>
-          
+
           <div className={styles.areasGrid}>
             {areas.map((area, idx) => (
-              <div key={idx} className={styles.areaCard}>
+              <Link key={idx} href={`/properties?location=${area}`} className={styles.areaCard}>
                 <div className={styles.areaOverlay}></div>
                 <img src={areaImages[idx % areaImages.length]} alt={area} className={styles.areaImage} />
                 <div className={styles.areaContent}>
                   <h3>{area}</h3>
-                  <p>{Math.floor(Math.random() * 20) + 5} propriétés</p>
+                  <p>{areaCounts[idx]} propriétés</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
+      {/* ─── CTA ─── */}
       <section className={styles.ctaSection}>
         <div className="container text-center">
+          <div className="section-tag" style={{ background: 'rgba(244,180,0,0.15)', color: 'var(--premium-gold)' }}>Contactez-nous</div>
           <h2>Vous recherchez un bien immobilier au Gabon ?</h2>
-          <p>Notre équipe d'experts est à votre disposition pour concrétiser votre projet.</p>
+          <p>Notre équipe d'experts est à votre disposition pour concrétiser votre projet immobilier.</p>
           <div className={styles.ctaButtons}>
-            <a href="tel:+24177353433" className="btn btn-primary">Appeler maintenant</a>
-            <a href="https://wa.me/24177353433" className="btn btn-gold">WhatsApp</a>
-            <Link href="/contact" className="btn btn-secondary" style={{color: 'white', borderColor: 'white'}}>Planifier une visite</Link>
+            <a href="tel:+24177353433" className="btn btn-gold">Appeler maintenant</a>
+            <a href="https://wa.me/24177353433" className="btn btn-primary">WhatsApp</a>
+            <Link href="/contact" className="btn btn-secondary" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.5)' }}>Planifier une visite</Link>
           </div>
         </div>
       </section>
