@@ -156,6 +156,35 @@ export const propertiesData = {
     ],
   },
 
+  7: {
+    id: 7,
+    title: "Immeuble R+2 en Construction",
+    price: "180 000 000",
+    priceUnit: "FCFA",
+    status: "Programme Neuf",
+    location: "Angondjé, Libreville, Gabon",
+    beds: 0,
+    baths: 0,
+    surface: 800,
+    type: "Immeuble",
+    parking: "10 Places",
+    image: "/images/immeuble-chantier-1.jpg.jpg",
+    image2: "/images/immeuble-chantier-2.jpg.jpg",
+    image3: "/images/immeuble-chantier-3.jpg.jpg",
+    description:
+      "Programme immobilier d'exception en cours de réalisation à Angondjé, l'un des quartiers les plus dynamiques de Libreville. Cet immeuble R+2 de 800 m² habitables offre des plateaux modulables pouvant accueillir des bureaux, commerces ou appartements résidentiels. La structure en béton armé est déjà coulée et les finitions démarrent au T3 2026. Un investissement stratégique à saisir dès la phase chantier pour bénéficier du meilleur prix.",
+    amenities: [
+      "Structure béton armé R+2",
+      "Plateaux modulables",
+      "Façade vitrée architecturale",
+      "Parking 10 places",
+      "Livraison T4 2026",
+      "Titre foncier disponible",
+      "Accès voie bitumée",
+      "Quartier en plein essor",
+    ],
+  },
+
   /* ─── À LOUER ─── */
   10: {
     id: 10,

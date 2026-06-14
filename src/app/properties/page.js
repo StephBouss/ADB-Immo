@@ -73,6 +73,17 @@ const allProperties = [
     surface: 1000,
     image: "/images/hero.png",
     exclusive: false
+  },
+  {
+    id: 7,
+    title: "Immeuble R+2 en Construction",
+    price: "180 000 000",
+    location: "Angondjé",
+    beds: 0,
+    baths: 0,
+    surface: 800,
+    image: "/images/immeuble-chantier-1.jpg.jpg",
+    exclusive: true
   }
 ];
 

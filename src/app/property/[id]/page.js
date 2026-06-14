@@ -86,10 +86,11 @@ export default async function PropertyDetailsPage({ params }) {
               )}
             </div>
 
-            {property.image2 && (
-              <div className={styles.gallery}>
+            {(property.image2 || property.image3) && (
+              <div className={`${styles.gallery} ${property.image3 ? styles.gallery3 : ''}`}>
                 <img src={property.image} alt={`${property.title} — vue 1`} className={styles.galleryImg} />
-                <img src={property.image2} alt={`${property.title} — vue 2`} className={styles.galleryImg} />
+                {property.image2 && <img src={property.image2} alt={`${property.title} — vue 2`} className={styles.galleryImg} />}
+                {property.image3 && <img src={property.image3} alt={`${property.title} — vue 3`} className={styles.galleryImg} />}
               </div>
             )}
 

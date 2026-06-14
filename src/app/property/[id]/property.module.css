@@ -182,6 +182,16 @@
   transform: scale(1.02);
 }
 
+.gallery3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 640px) {
+  .gallery, .gallery3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section {
   margin-bottom: 40px;
 }
