@@ -161,6 +161,27 @@
   font-weight: 500;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 36px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.galleryImg:hover {
+  transform: scale(1.02);
+}
+
 .section {
   margin-bottom: 40px;
 }

@@ -12,7 +12,8 @@ export const propertiesData = {
     surface: 350,
     type: "Villa",
     parking: "2 Places",
-    image: "/images/hero.png",
+    image: "/images/villa-piscine-1.jpg.png",
+    image2: "/images/villa-piscine-2.jpg.png",
     description:
       "Magnifique villa contemporaine située dans le quartier très prisé de la Sablière. Offrant de très belles prestations, cette propriété dispose d'un vaste salon lumineux avec vue sur la piscine à débordement, une cuisine américaine entièrement équipée, et 5 chambres spacieuses dont une suite parentale avec dressing et salle de bain privative. Le jardin paysager vous garantit intimité et calme absolu.",
     amenities: [

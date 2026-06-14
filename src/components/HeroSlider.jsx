@@ -5,7 +5,8 @@ import Link from 'next/link';
 import styles from './HeroSlider.module.css';
 
 const slides = [
-  "/images/hero.png",
+  "/images/villa-piscine-1.jpg.png",
+  "/images/villa-piscine-2.jpg.png",
   "/images/villa1.png",
   "/images/apartment1.png"
 ];

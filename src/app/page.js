@@ -15,7 +15,7 @@ export default function HomePage() {
       beds: 5,
       baths: 4,
       surface: 350,
-      image: "/images/hero.png",
+      image: "/images/villa-piscine-1.jpg.png",
       exclusive: true
     },
     {

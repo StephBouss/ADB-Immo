@@ -86,6 +86,13 @@ export default async function PropertyDetailsPage({ params }) {
               )}
             </div>
 
+            {property.image2 && (
+              <div className={styles.gallery}>
+                <img src={property.image} alt={`${property.title} — vue 1`} className={styles.galleryImg} />
+                <img src={property.image2} alt={`${property.title} — vue 2`} className={styles.galleryImg} />
+              </div>
+            )}
+
             <div className={styles.section}>
               <h3 className={styles.sectionTitle}>Description</h3>
               <p className={styles.description}>{property.description}</p>
