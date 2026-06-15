@@ -35,7 +35,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className={styles.historyImgWrapper}>
-              <img src="/images/villa1.png" alt="Histoire ADB Immo" className={styles.historyImg} />
+              <img src="/images/residence-contemporaine-1.jpg.png" alt="Histoire ADB Immo" className={styles.historyImg} />
             </div>
           </div>
         </div>
@@ -114,21 +114,21 @@ export default function AboutPage() {
           <div className={styles.teamGrid}>
             {/* Team placeholders */}
             <div className={styles.teamMember}>
-              <img src="/images/apartment1.png" alt="Membre de l'équipe" className={styles.teamImg} />
+              <img src="/images/appartement-luxe-1.jpg.png" alt="Membre de l'équipe" className={styles.teamImg} />
               <div className={styles.teamOverlay}>
                 <h4 className={styles.teamName}>Directeur Agence</h4>
                 <p className={styles.teamRole}>Fondateur & CEO</p>
               </div>
             </div>
             <div className={styles.teamMember}>
-              <img src="/images/villa1.png" alt="Membre de l'équipe" className={styles.teamImg} />
+              <img src="/images/villa-piscine-2.jpg.png" alt="Membre de l'équipe" className={styles.teamImg} />
               <div className={styles.teamOverlay}>
                 <h4 className={styles.teamName}>Responsable Ventes</h4>
                 <p className={styles.teamRole}>Expert Marché Local</p>
               </div>
             </div>
             <div className={styles.teamMember}>
-              <img src="/images/hero.png" alt="Membre de l'équipe" className={styles.teamImg} />
+              <img src="/images/appartement-luxe-2.jpg.png" alt="Membre de l'équipe" className={styles.teamImg} />
               <div className={styles.teamOverlay}>
                 <h4 className={styles.teamName}>Consultant Luxe</h4>
                 <p className={styles.teamRole}>Investissement International</p>
