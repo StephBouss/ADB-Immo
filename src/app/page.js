@@ -26,7 +26,7 @@ export default function HomePage() {
       beds: 3,
       baths: 2,
       surface: 180,
-      image: "/images/apartment1.png",
+      image: "/images/appartement-luxe-1.jpg.png",
       exclusive: false
     },
     {
