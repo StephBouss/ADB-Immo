@@ -134,6 +134,20 @@
   filter: none;
 }
 
+/* ─── Active link ─── */
+.activeLink {
+  color: var(--premium-gold) !important;
+}
+
+.activeLink::after {
+  width: 100% !important;
+}
+
+/* ─── Mobile overlay ─── */
+.mobileOverlay {
+  display: none;
+}
+
 /* ─── Mobile ─── */
 @media (max-width: 992px) {
   .topBarContainer {
@@ -183,5 +197,13 @@
   .mobileToggle {
     display: block;
     z-index: 1001;
+  }
+
+  .mobileOverlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
   }
 }

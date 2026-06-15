@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Globe, Camera, MessageCircle, MapPin, Phone, Mail } from 'lucide-react';
+import { MessageCircle, MapPin, Phone, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -15,8 +15,6 @@ export default function Footer() {
             </Link>
             <p className={styles.tagline}>L'EXCELLENCE IMMOBILIÈRE À VOTRE PORTÉE</p>
             <div className={styles.socials}>
-              <a href="#" className={styles.socialIcon} aria-label="Site web"><Globe size={18} /></a>
-              <a href="#" className={styles.socialIcon} aria-label="Instagram"><Camera size={18} /></a>
               <a href="https://wa.me/24177353433" className={styles.socialIcon} aria-label="WhatsApp"><MessageCircle size={18} /></a>
             </div>
           </div>

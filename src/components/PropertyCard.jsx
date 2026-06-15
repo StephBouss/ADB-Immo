@@ -15,8 +15,8 @@ export default function PropertyCard({ id, image, title, price, location, beds, 
         <h3 className={styles.title}>{title}</h3>
         
         <div className={styles.features}>
-          <div className={styles.feature}><Bed size={16} /> {beds} Ch</div>
-          <div className={styles.feature}><Bath size={16} /> {baths} Sdb</div>
+          {beds > 0 && <div className={styles.feature}><Bed size={16} /> {beds} Ch</div>}
+          {baths > 0 && <div className={styles.feature}><Bath size={16} /> {baths} Sdb</div>}
           <div className={styles.feature}><Square size={16} /> {surface} m²</div>
         </div>
       </div>

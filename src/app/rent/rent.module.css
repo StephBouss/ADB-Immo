@@ -7,10 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/apartment1.png');
+  background-image: url('/images/appartement-luxe-1.jpg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: white;
   text-align: center;
   padding: 0 20px;
@@ -300,7 +300,7 @@
 /* CTA */
 .ctaSection {
   padding: 100px 0;
-  background: url('/images/villa1.png') center/cover fixed;
+  background: url('/images/villa-piscine-2.jpg.png') center/cover;
   position: relative;
   text-align: center;
   color: white;

@@ -7,8 +7,8 @@ import styles from './HeroSlider.module.css';
 const slides = [
   "/images/villa-piscine-1.jpg.png",
   "/images/villa-piscine-2.jpg.png",
-  "/images/villa1.png",
-  "/images/apartment1.png"
+  "/images/residence-contemporaine-1.jpg.png",
+  "/images/appartement-luxe-1.jpg.png",
 ];
 
 export default function HeroSlider() {

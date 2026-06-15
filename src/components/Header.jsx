@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Phone, Mail, MapPin, Menu, X } from 'lucide-react';
 import styles from './Header.module.css';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,18 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMenu = () => setMobileMenuOpen(false);
+
+  const navLinks = [
+    { href: '/', label: 'Accueil' },
+    { href: '/properties', label: 'Biens' },
+    { href: '/buy', label: 'Acheter' },
+    { href: '/rent', label: 'Louer' },
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'À propos' },
+    { href: '/contact', label: 'Contact' },
+  ];
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
@@ -37,14 +51,25 @@ export default function Header() {
             <img src="/logo.png" alt="ADB Immo" style={{ height: '60px', width: 'auto' }} />
           </Link>
 
+          {/* Overlay mobile */}
+          {mobileMenuOpen && (
+            <div className={styles.mobileOverlay} onClick={closeMenu} />
+          )}
+
           <nav className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
-            <Link href="/" onClick={() => setMobileMenuOpen(false)}>Accueil</Link>
-            <Link href="/properties" onClick={() => setMobileMenuOpen(false)}>Biens</Link>
-            <Link href="/buy" onClick={() => setMobileMenuOpen(false)}>Acheter</Link>
-            <Link href="/rent" onClick={() => setMobileMenuOpen(false)}>Louer</Link>
-            <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-            <Link href="/about" onClick={() => setMobileMenuOpen(false)}>À propos</Link>
-            <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            {navLinks.map(({ href, label }) => {
+              const isActive = href === '/' ? pathname === '/' : pathname.startsWith(href);
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={closeMenu}
+                  className={isActive ? styles.activeLink : ''}
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </nav>
 
           <button className={styles.mobileToggle} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

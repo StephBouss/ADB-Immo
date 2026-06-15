@@ -154,7 +154,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div style={{height: '100%'}}>
-              <img src="/images/hero.png" alt="Excellence ADB Immo" className={styles.whyImg} />
+              <img src="/images/villa-piscine-1.jpg.png" alt="Excellence ADB Immo" className={styles.whyImg} />
             </div>
           </div>
         </div>

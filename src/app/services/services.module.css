@@ -6,10 +6,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/villa1.png');
+  background-image: url('/images/residence-contemporaine-1.jpg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: white;
   text-align: center;
   padding: 0 20px;
@@ -352,7 +352,7 @@
 }
 
 .statsSection {
-  background: url('/images/hero.png') center/cover fixed;
+  background: url('/images/immeuble-chantier-1.jpg.jpg') center/cover;
   padding: 100px 0;
   position: relative;
   color: white;

@@ -54,7 +54,7 @@ export default function HomePage() {
   const areaCounts = [18, 12, 15, 9, 11, 7];
 
   return (
-    <>
+    <main>
       <HeroSlider />
 
       <div className={styles.searchWrapper}>
@@ -182,6 +182,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

@@ -16,7 +16,7 @@ const allProperties = [
     beds: 5,
     baths: 4,
     surface: 350,
-    image: "/images/villa1.png",
+    image: "/images/villa-piscine-1.jpg.png",
     exclusive: true
   },
   {
@@ -49,7 +49,7 @@ const allProperties = [
     beds: 2,
     baths: 1,
     surface: 90,
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-3.jpg.png",
     exclusive: false
   },
   {
@@ -60,7 +60,7 @@ const allProperties = [
     beds: 4,
     baths: 3,
     surface: 280,
-    image: "/images/villa1.png",
+    image: "/images/villa-piscine-2.jpg.png",
     exclusive: false
   },
   {
@@ -84,16 +84,93 @@ const allProperties = [
     surface: 800,
     image: "/images/immeuble-chantier-1.jpg.jpg",
     exclusive: true
-  }
+  },
+  /* ─── À LOUER ─── */
+  {
+    id: 10,
+    title: "Appartement Meublé Haut Standing",
+    price: "350 000",
+    location: "Batterie IV",
+    beds: 3,
+    baths: 2,
+    surface: 160,
+    image: "/images/appartement-luxe-1.jpg.png",
+    exclusive: true,
+  },
+  {
+    id: 11,
+    title: "Villa avec Jardin Privatif",
+    price: "800 000",
+    location: "Sablière",
+    beds: 5,
+    baths: 4,
+    surface: 320,
+    image: "/images/villa-piscine-1.jpg.png",
+    exclusive: false,
+  },
+  {
+    id: 12,
+    title: "Résidence Sécurisée Vue Mer",
+    price: "550 000",
+    location: "Akanda",
+    beds: 4,
+    baths: 3,
+    surface: 220,
+    image: "/images/residence-contemporaine-1.jpg.png",
+    exclusive: true,
+  },
+  {
+    id: 13,
+    title: "Studio Moderne Centre-Ville",
+    price: "180 000",
+    location: "Centre-Ville",
+    beds: 1,
+    baths: 1,
+    surface: 55,
+    image: "/images/appartement-luxe-3.jpg.png",
+    exclusive: false,
+  },
+  {
+    id: 14,
+    title: "Appartement Familial Spacieux",
+    price: "420 000",
+    location: "Angondjé",
+    beds: 4,
+    baths: 2,
+    surface: 190,
+    image: "/images/appartement-luxe-2.jpg.png",
+    exclusive: false,
+  },
+  {
+    id: 15,
+    title: "Villa Contemporaine Climatisée",
+    price: "1 200 000",
+    location: "Cap Estérias",
+    beds: 6,
+    baths: 5,
+    surface: 450,
+    image: "/images/villa-piscine-2.jpg.png",
+    exclusive: true,
+  },
 ];
 
 export default async function PropertiesPage(props) {
   const searchParams = await props.searchParams;
+  const statusParam = searchParams?.status || 'all';
   const typeParam = searchParams?.type || 'Tous';
   const locationParam = searchParams?.location || 'Toutes zones';
   const budgetParam = searchParams?.budget || 'Peu importe';
 
+  const saleIds = [1, 2, 3, 4, 5, 6, 7];
+  const rentIds = [10, 11, 12, 13, 14, 15];
+
   let filteredProperties = allProperties;
+
+  if (statusParam === 'buy') {
+    filteredProperties = filteredProperties.filter(p => saleIds.includes(p.id));
+  } else if (statusParam === 'rent') {
+    filteredProperties = filteredProperties.filter(p => rentIds.includes(p.id));
+  }
 
   if (typeParam !== 'Tous') {
     filteredProperties = filteredProperties.filter(p => {

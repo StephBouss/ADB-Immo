@@ -94,7 +94,7 @@ export const propertiesData = {
     surface: 90,
     type: "Appartement",
     parking: "1 Place",
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-3.jpg.png",
     description:
       "Appartement fonctionnel et bien agencé en plein cœur de Libreville, idéal pour un premier achat ou un investissement locatif. À deux pas des commerces, administrations et restaurants, il offre une vie pratique au quotidien avec deux chambres confortables, un séjour lumineux et une cuisine semi-équipée.",
     amenities: [
@@ -120,7 +120,7 @@ export const propertiesData = {
     surface: 280,
     type: "Villa",
     parking: "2 Places",
-    image: "/images/villa1.png",
+    image: "/images/villa-piscine-2.jpg.png",
     description:
       "Belle villa familiale dans le quartier résidentiel d'Angondjé, prisé pour son calme et sa sécurité. La propriété dispose d'un grand jardin arboré, d'un spacieux salon-séjour, d'une cuisine équipée ouverte sur la terrasse, et de quatre chambres dont une suite parentale. Idéale pour une famille cherchant un cadre de vie agréable.",
     amenities: [
@@ -202,7 +202,7 @@ export const propertiesData = {
     surface: 160,
     type: "Appartement",
     parking: "1 Place",
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-1.jpg.png",
     description:
       "Appartement entièrement meublé et équipé dans une résidence sécurisée de Batterie IV. Idéal pour expatriés ou cadres, il intègre un salon moderne, une cuisine américaine équipée, trois chambres confortables et deux salles de bain. Prêt à vivre, avec toute la vaisselle, la literie et les équipements électroménagers inclus.",
     amenities: [
@@ -228,7 +228,7 @@ export const propertiesData = {
     surface: 320,
     type: "Villa",
     parking: "2 Places",
-    image: "/images/villa1.png",
+    image: "/images/villa-piscine-1.jpg.png",
     description:
       "Magnifique villa indépendante à louer dans l'un des quartiers les plus recherchés de Libreville. Avec son vaste jardin privatif, sa piscine, et ses prestations haut de gamme, cette propriété offre un cadre de vie exceptionnel pour les familles ou les expatriés exigeants. Disponible immédiatement.",
     amenities: [
@@ -254,7 +254,7 @@ export const propertiesData = {
     surface: 220,
     type: "Appartement",
     parking: "1 Place",
-    image: "/images/hero.png",
+    image: "/images/residence-contemporaine-1.jpg.png",
     description:
       "Appartement spacieux en résidence fermée à Akanda avec une vue imprenable sur l'Atlantique. Lumineux et bien ventilé, il comprend quatre chambres, trois salles de bain, un grand salon ouvrant sur une terrasse panoramique. Résidence avec gardiennage 24h, piscine commune et accès plage à pied.",
     amenities: [
@@ -280,7 +280,7 @@ export const propertiesData = {
     surface: 55,
     type: "Studio",
     parking: "—",
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-3.jpg.png",
     description:
       "Studio moderne et fonctionnel en plein centre de Libreville, idéal pour un étudiant, un jeune professionnel ou une personne seule en déplacement. Entièrement meublé avec goût, il offre un espace de vie optimisé avec kitchenette équipée et salle de bain moderne. Accès immédiat aux commerces, restaurants et transports.",
     amenities: [
@@ -306,7 +306,7 @@ export const propertiesData = {
     surface: 190,
     type: "Appartement",
     parking: "1 Place",
-    image: "/images/villa1.png",
+    image: "/images/appartement-luxe-2.jpg.png",
     description:
       "Grand appartement familial dans la résidence Le Palais d'Angondjé, quartier calme et verdoyant. Avec ses quatre chambres, son double séjour et sa cuisine aménagée, il convient parfaitement à une famille à la recherche de confort et d'espace. La résidence dispose d'un espace vert commun et d'une sécurité renforcée.",
     amenities: [
@@ -332,7 +332,7 @@ export const propertiesData = {
     surface: 450,
     type: "Villa",
     parking: "3 Places",
-    image: "/images/hero.png",
+    image: "/images/villa-piscine-2.jpg.png",
     description:
       "Villa de prestige à louer à Cap Estérias, dans un environnement paisible en bord de mer. Cette propriété d'exception de 450 m² dispose de 6 suites climatisées, d'un salon de réception, d'une cuisine professionnelle, d'une piscine à débordement et d'un jardin tropical soigné. Idéale pour une grande famille ou une résidence de représentation.",
     amenities: [
