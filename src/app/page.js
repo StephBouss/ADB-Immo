@@ -34,10 +34,10 @@ export default function HomePage() {
       title: "Résidence Contemporaine",
       price: "220 000 000 FCFA",
       location: "Akanda, Libreville",
-      beds: 6,
-      baths: 5,
+      beds: 3,
+      baths: 2,
       surface: 420,
-      image: "/images/villa1.png",
+      image: "/images/residence-contemporaine-2.jpg.png",
       exclusive: true
     }
   ];
