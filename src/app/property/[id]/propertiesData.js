@@ -65,8 +65,8 @@ export const propertiesData = {
     surface: 420,
     type: "Immeuble",
     parking: "6 Places",
-    image: "/images/residence-contemporaine-2.jpg.png",
-    image2: "/images/residence-contemporaine-1.jpg.png",
+    image: "/images/residence-contemporaine-1.jpg.png",
+    image2: "/images/residence-contemporaine-2.jpg.png",
     description:
       "Immeuble résidentiel de standing situé à Akanda, quartier prisé de Libreville. Cet immeuble contemporain R+2 propose des appartements haut de gamme aux finitions soignées : larges baies vitrées, cuisine américaine en marbre, plafonds à caissons avec éclairage LED intégré et terrasses privatives à chaque étage. La façade en bois et verre confère à l'ensemble une esthétique architecturale rare sur le marché gabonais.",
     amenities: [

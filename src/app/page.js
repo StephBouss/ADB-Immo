@@ -37,7 +37,7 @@ export default function HomePage() {
       beds: 3,
       baths: 2,
       surface: 420,
-      image: "/images/residence-contemporaine-2.jpg.png",
+      image: "/images/residence-contemporaine-1.jpg.png",
       exclusive: true
     }
   ];
