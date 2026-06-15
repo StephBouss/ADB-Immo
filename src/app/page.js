@@ -43,7 +43,14 @@ export default function HomePage() {
   ];
 
   const areas = ['Sablière', 'Akanda', 'Batterie IV', 'Charbonnages', 'Angondjé', 'Louis'];
-  const areaImages = ['/images/villa1.png', '/images/hero.png', '/images/apartment1.png'];
+  const areaImages = [
+    '/images/villa-piscine-1.jpg.png',          // Sablière
+    '/images/residence-contemporaine-1.jpg.png', // Akanda
+    '/images/appartement-luxe-1.jpg.png',        // Batterie IV
+    '/images/appartement-luxe-3.jpg.png',        // Charbonnages
+    '/images/immeuble-chantier-1.jpg.jpg',       // Angondjé
+    '/images/villa-piscine-2.jpg.png',           // Louis
+  ];
   const areaCounts = [18, 12, 15, 9, 11, 7];
 
   return (
@@ -151,7 +158,7 @@ export default function HomePage() {
             {areas.map((area, idx) => (
               <Link key={idx} href={`/properties?location=${area}`} className={styles.areaCard}>
                 <div className={styles.areaOverlay}></div>
-                <img src={areaImages[idx % areaImages.length]} alt={area} className={styles.areaImage} />
+                <img src={areaImages[idx]} alt={area} className={styles.areaImage} />
                 <div className={styles.areaContent}>
                   <h3>{area}</h3>
                   <p>{areaCounts[idx]} propriétés</p>
