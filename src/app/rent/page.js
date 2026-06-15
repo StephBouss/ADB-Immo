@@ -17,7 +17,7 @@ const rentals = [
     beds: 3,
     baths: 2,
     surface: 160,
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-1.jpg.png",
     exclusive: true,
   },
   {
@@ -28,7 +28,7 @@ const rentals = [
     beds: 5,
     baths: 4,
     surface: 320,
-    image: "/images/villa1.png",
+    image: "/images/villa-piscine-1.jpg.png",
     exclusive: false,
   },
   {
@@ -39,7 +39,7 @@ const rentals = [
     beds: 4,
     baths: 3,
     surface: 220,
-    image: "/images/hero.png",
+    image: "/images/residence-contemporaine-1.jpg.png",
     exclusive: true,
   },
   {
@@ -50,7 +50,7 @@ const rentals = [
     beds: 1,
     baths: 1,
     surface: 55,
-    image: "/images/apartment1.png",
+    image: "/images/appartement-luxe-3.jpg.png",
     exclusive: false,
   },
   {
@@ -61,7 +61,7 @@ const rentals = [
     beds: 4,
     baths: 2,
     surface: 190,
-    image: "/images/villa1.png",
+    image: "/images/appartement-luxe-2.jpg.png",
     exclusive: false,
   },
   {
@@ -72,7 +72,7 @@ const rentals = [
     beds: 6,
     baths: 5,
     surface: 450,
-    image: "/images/hero.png",
+    image: "/images/villa-piscine-2.jpg.png",
     exclusive: true,
   },
 ];
@@ -101,12 +101,12 @@ const avantages = [
 ];
 
 const zones = [
-  { name: "Sablière", count: "12 locations", img: "/images/villa1.png" },
-  { name: "Akanda", count: "8 locations", img: "/images/hero.png" },
-  { name: "Batterie IV", count: "10 locations", img: "/images/apartment1.png" },
-  { name: "Angondjé", count: "6 locations", img: "/images/villa1.png" },
-  { name: "Centre-Ville", count: "9 locations", img: "/images/apartment1.png" },
-  { name: "Cap Estérias", count: "4 locations", img: "/images/hero.png" },
+  { name: "Sablière", count: "12 locations", img: "/images/villa-piscine-1.jpg.png" },
+  { name: "Akanda", count: "8 locations", img: "/images/residence-contemporaine-1.jpg.png" },
+  { name: "Batterie IV", count: "10 locations", img: "/images/appartement-luxe-1.jpg.png" },
+  { name: "Angondjé", count: "6 locations", img: "/images/immeuble-chantier-1.jpg.jpg" },
+  { name: "Centre-Ville", count: "9 locations", img: "/images/appartement-luxe-3.jpg.png" },
+  { name: "Cap Estérias", count: "4 locations", img: "/images/villa-piscine-2.jpg.png" },
 ];
 
 export default function RentPage() {
@@ -198,7 +198,7 @@ export default function RentPage() {
               </div>
             </div>
             <div>
-              <img src="/images/villa1.png" alt="Louer avec ADB Immo" className={styles.avantagesImg} />
+              <img src="/images/residence-contemporaine-1.jpg.png" alt="Louer avec ADB Immo" className={styles.avantagesImg} />
             </div>
           </div>
         </div>
