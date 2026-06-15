@@ -71,7 +71,7 @@ const allProperties = [
     beds: 0,
     baths: 0,
     surface: 1000,
-    image: "/images/hero.png",
+    image: "/images/terrain-constructible-1.jpg.png",
     exclusive: false
   },
   {

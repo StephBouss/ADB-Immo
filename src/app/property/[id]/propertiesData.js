@@ -143,7 +143,8 @@ export const propertiesData = {
     surface: 1000,
     type: "Terrain",
     parking: "—",
-    image: "/images/hero.png",
+    image: "/images/terrain-constructible-1.jpg.png",
+    image2: "/images/terrain-constructible-2.jpg.png",
     description:
       "Terrain constructible de 1 000 m² situé à Cap Estérias, zone en plein essor à proximité de la mer. Le terrain est viabilisé (eau, électricité en bordure), plat et clôturé. Un investissement stratégique dans une zone à fort potentiel de valorisation, idéal pour la construction d'une villa ou d'un petit immeuble résidentiel.",
     amenities: [
