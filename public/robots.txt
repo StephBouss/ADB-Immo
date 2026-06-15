@@ -1,0 +1,92 @@
+# robots.txt — ADB Immo (www.adbimmo.com)
+# Ce fichier indique aux robots d'indexation quelles pages crawler
+
+# ─── Moteurs de recherche légitimes ──────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /_next/
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Disallow: /_next/
+Crawl-delay: 3
+
+User-agent: Slurp
+Allow: /
+Disallow: /_next/
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /_next/
+Crawl-delay: 5
+
+# ─── Bots IA — accès refusé (contenu propriétaire) ───────────────────────────
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# ─── Scrapers et crawlers agressifs — accès refusé ───────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+# ─── Règle par défaut pour tous les autres robots ────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 5
+
+# ─── Sitemap ──────────────────────────────────────────────────────────────────
+Sitemap: https://www.adbimmo.com/sitemap.xml

@@ -122,7 +122,12 @@ export default function ContactPage() {
                   <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, fontSize: '0.9rem' }}>Nom complet</label>
                   <input
                     type="text"
+                    name="nom"
                     placeholder="Votre nom"
+                    required
+                    minLength={2}
+                    maxLength={100}
+                    autoComplete="name"
                     style={{ width: '100%', padding: '12px 15px', border: '1px solid var(--light-gray)', borderRadius: '8px', fontFamily: 'inherit', fontSize: '1rem', boxSizing: 'border-box' }}
                   />
                 </div>
@@ -132,7 +137,10 @@ export default function ContactPage() {
                     <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, fontSize: '0.9rem' }}>Téléphone</label>
                     <input
                       type="tel"
+                      name="telephone"
                       placeholder="Votre numéro"
+                      maxLength={20}
+                      autoComplete="tel"
                       style={{ width: '100%', padding: '12px 15px', border: '1px solid var(--light-gray)', borderRadius: '8px', fontFamily: 'inherit', fontSize: '1rem', boxSizing: 'border-box' }}
                     />
                   </div>
@@ -140,7 +148,11 @@ export default function ContactPage() {
                     <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, fontSize: '0.9rem' }}>Email</label>
                     <input
                       type="email"
+                      name="email"
                       placeholder="Votre email"
+                      required
+                      maxLength={150}
+                      autoComplete="email"
                       style={{ width: '100%', padding: '12px 15px', border: '1px solid var(--light-gray)', borderRadius: '8px', fontFamily: 'inherit', fontSize: '1rem', boxSizing: 'border-box' }}
                     />
                   </div>
@@ -160,8 +172,12 @@ export default function ContactPage() {
                 <div style={{ marginBottom: '24px' }}>
                   <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, fontSize: '0.9rem' }}>Message</label>
                   <textarea
+                    name="message"
                     rows="5"
                     placeholder="Comment pouvons-nous vous aider ?"
+                    required
+                    minLength={10}
+                    maxLength={2000}
                     style={{ width: '100%', padding: '12px 15px', border: '1px solid var(--light-gray)', borderRadius: '8px', fontFamily: 'inherit', fontSize: '1rem', resize: 'vertical', boxSizing: 'border-box' }}
                   />
                 </div>
