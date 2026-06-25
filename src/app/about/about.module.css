@@ -108,6 +108,102 @@
   .heroContent { margin-top: 90px; }
 }
 
+.ceoSection {
+  padding: 120px 0;
+  background: var(--off-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.ceoQuoteMark {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 20rem;
+  color: rgba(10, 67, 198, 0.03);
+  font-family: var(--font-heading);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ceoGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.ceoImgWrapper {
+  position: relative;
+}
+
+.ceoImgWrapper::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--premium-gold);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.ceoImg {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.ceoTag {
+  display: inline-block;
+  background: rgba(244, 180, 0, 0.14);
+  border: 1.5px solid var(--premium-gold);
+  color: var(--premium-gold);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+.ceoText {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.ceoSignature {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(10, 67, 198, 0.15);
+}
+
+.ceoName {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--royal-blue);
+  margin-bottom: 2px;
+}
+
+.ceoRole {
+  font-size: 0.95rem;
+  color: var(--premium-gold);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .historySection {
   padding: 120px 0;
   background: white;
@@ -379,7 +475,7 @@
 }
 
 @media (max-width: 992px) {
-  .historyGrid, .visionGrid {
+  .historyGrid, .visionGrid, .ceoGrid {
     grid-template-columns: 1fr;
   }
   .heroTitle {

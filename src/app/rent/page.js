@@ -182,7 +182,7 @@ export default function RentPage() {
           <div className={styles.avantagesGrid}>
             <div>
               <h2 className="section-title" style={{ textAlign: 'left' }}>Pourquoi louer avec ADB Immo ?</h2>
-              <p style={{ color: '#666', fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '40px' }}>
+              <p style={{ color: '#666', fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '40px', textAlign: 'justify' }}>
                 Louer un bien ne devrait pas être une source de stress. Notre équipe prend en charge chaque détail pour que vous puissiez vous concentrer sur l'essentiel : votre nouveau chez-vous.
               </p>
               <div className={styles.avantagesList}>

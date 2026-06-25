@@ -21,16 +21,45 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mot du Directeur Général */}
+      <section className={styles.ceoSection}>
+        <div className={styles.ceoQuoteMark}>«</div>
+        <div className="container">
+          <div className={styles.ceoGrid}>
+            <div className={styles.ceoImgWrapper}>
+              <img src="/images/adb-ba-aliou.jpeg" alt="MBA BA ALIOU, Administrateur Directeur Général d'ADB Immo" className={styles.ceoImg} />
+            </div>
+            <div>
+              <span className={styles.ceoTag}>Le Mot du Directeur Général</span>
+              <h2 className="section-title">Une Vision Portée par l'Engagement.</h2>
+              <p className={styles.ceoText}>
+                Chez ADB Immo, nous croyons que l'immobilier ne se résume pas à des mètres carrés, mais à des histoires de vie que nous avons l'honneur d'accompagner.
+              </p>
+              <p className={styles.ceoText}>
+                Depuis notre création, notre ambition est restée la même : offrir à chaque client, gabonais comme international, un service à la hauteur de ses exigences, fondé sur la confiance, la rigueur et une connaissance intime de notre marché.
+              </p>
+              <p className={styles.ceoText}>
+                Je tiens à remercier chacun de nos clients pour la confiance qu'ils nous accordent, ainsi que toute l'équipe ADB Immo pour son engagement quotidien. Ensemble, nous continuerons à faire de chaque projet immobilier une réussite.
+              </p>
+              <div className={styles.ceoSignature}>
+                <p className={styles.ceoName}>MBA BA ALIOU</p>
+                <p className={styles.ceoRole}>Administrateur Directeur Général</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Histoire Section */}
       <section className={styles.historySection}>
         <div className="container">
           <div className={styles.historyGrid}>
             <div>
               <h2 className="section-title">Une vision née de l'exigence.</h2>
-              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8', marginBottom: '20px'}}>
+              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8', marginBottom: '20px', textAlign: 'justify'}}>
                 Fondée avec la conviction que le marché immobilier gabonais méritait un standard de service international, ADB Immo est née d'une passion pour l'excellence.
               </p>
-              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8'}}>
+              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8', textAlign: 'justify'}}>
                 Nous avons repensé le métier d'agent immobilier pour le transformer en un véritable rôle de conseiller privé, où la qualité de la relation humaine prime sur la simple transaction. Chez ADB Immo, chaque projet est unique.
               </p>
             </div>
@@ -48,13 +77,13 @@ export default function AboutPage() {
           <div className={styles.visionGrid}>
             <div className={styles.visionCard}>
               <h3>Notre Vision</h3>
-              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8'}}>
+              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8', textAlign: 'justify'}}>
                 Devenir l'acteur incontournable de l'immobilier premium en Afrique Centrale en redéfinissant les standards du luxe et du service client.
               </p>
             </div>
             <div className={styles.visionCard}>
               <h3>Notre Mission</h3>
-              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8'}}>
+              <p style={{fontSize: '1.1rem', color: '#555', lineHeight: '1.8', textAlign: 'justify'}}>
                 Connecter nos clients aux espaces qui inspireront leur avenir, avec intégrité, transparence et un dévouement absolu.
               </p>
             </div>

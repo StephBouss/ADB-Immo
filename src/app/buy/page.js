@@ -193,7 +193,7 @@ export default function BuyPage() {
           <div className={styles.avantagesGrid}>
             <div>
               <h2 className="section-title" style={{ textAlign: 'left' }}>Pourquoi acheter avec ADB Immo ?</h2>
-              <p style={{ color: '#666', fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '40px' }}>
+              <p style={{ color: '#666', fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '40px', textAlign: 'justify' }}>
                 Acquérir un bien immobilier au Gabon est une décision majeure. Notre équipe vous guide à chaque étape pour sécuriser votre investissement et concrétiser votre projet dans les meilleures conditions.
               </p>
               <div className={styles.avantagesList}>

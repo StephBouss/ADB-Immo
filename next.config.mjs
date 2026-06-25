@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const isDev = process.env.NODE_ENV !== 'production';
+
 const securityHeaders = [
   // Empêche les attaques de type clickjacking (le site ne peut pas être intégré dans une iframe)
   {
@@ -47,7 +49,8 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Next.js App Router nécessite 'unsafe-inline' pour les scripts de hydration
-      "script-src 'self' 'unsafe-inline'",
+      // 'unsafe-eval' est requis uniquement en dev (React DevTools / Turbopack HMR) — jamais en production
+      isDev ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'" : "script-src 'self' 'unsafe-inline'",
       // CSS Modules et styles inline JSX + Google Fonts
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       // Polices Google Fonts

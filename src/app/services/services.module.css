@@ -207,6 +207,7 @@
   color: #666;
   margin-bottom: 20px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .serviceCardDark .serviceText {
@@ -286,6 +287,10 @@
   color: var(--premium-gold);
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+.whyPoint p {
+  text-align: justify;
 }
 
 .processSection {
